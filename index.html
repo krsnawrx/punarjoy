@@ -1,114 +1,459 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Punarjoy — Find your perfect PG or room. Comfortable, affordable, and verified accommodations near you." />
-    <title>Punarjoy | PG &amp; Rooms Booking</title>
 
-    <!-- Google Fonts: Barlow Condensed -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Punarjoy — Find your perfect PG or room. Comfortable, affordable, and verified accommodations near you." />
+  <title>Punarjoy | PG &amp; Rooms Booking</title>
 
-    <!-- CSS: Design tokens first, then reset, then global, then sections -->
-    <link rel="stylesheet" href="css/tokens.css" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/global.css" />
-    <link rel="stylesheet" href="css/navbar.css" />
-    <link rel="stylesheet" href="css/hero.css" />
-    <link rel="stylesheet" href="css/tabs.css" />
-    <link rel="stylesheet" href="css/cards.css" />
-    <link rel="stylesheet" href="css/pg-section.css" />
-    <link rel="stylesheet" href="css/rooms-section.css" />
-    <link rel="stylesheet" href="css/features.css" />
-    <link rel="stylesheet" href="css/booking.css" />
-    <link rel="stylesheet" href="css/footer.css" />
-  </head>
-  <body>
+  <!-- Google Fonts: Barlow Condensed -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600&display=swap" rel="stylesheet" />
 
-    <!-- Navigation -->
-    <nav id="navbar">
-      <div class="nav-inner">
-        <a href="#hero" class="nav-logo-link">
-          <img src="assets/logo_p.jpeg" alt="Punarjoy" class="nav-logo">
-        </a>
+  <!-- CSS: Design tokens first, then reset, then global, then sections -->
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/tabs.css" />
+  <link rel="stylesheet" href="css/cards.css" />
+  <link rel="stylesheet" href="css/pg-section.css" />
+  <link rel="stylesheet" href="css/rooms-section.css" />
+  <link rel="stylesheet" href="css/features.css" />
+  <link rel="stylesheet" href="css/booking.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+</head>
 
-        <div class="nav-links">
-          <a href="#pgs" class="nav-link">PGs</a>
-          <a href="#rooms" class="nav-link">Rooms</a>
-          <a href="#booking" class="nav-link">Book Now</a>
-          <a href="#booking" class="pill-btn nav-cta">Enquire</a>
-        </div>
+<body>
 
-        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo-link">
+        <img src="assets/logo_p.jpeg" alt="Punarjoy" class="nav-logo">
+      </a>
+
+      <div class="nav-links">
+        <a href="#pgs" class="nav-link">PGs</a>
+        <a href="#rooms" class="nav-link">Rooms</a>
+        <a href="#booking" class="nav-link">Book Now</a>
+        <a href="#booking" class="pill-btn nav-cta">Enquire</a>
       </div>
 
-      <div class="nav-drawer" id="nav-drawer">
-        <a href="#pgs" class="drawer-link">PGs</a>
-        <a href="#rooms" class="drawer-link">Rooms</a>
-        <a href="#booking" class="drawer-link">Book Now</a>
-        <a href="#booking" class="pill-btn drawer-cta">Enquire</a>
-      </div>
-    </nav>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
 
-    <!-- Hero Section -->
-    <section id="hero">
-      <div class="hero-inner container">
-        <h1 class="hero-headline">
-          YOUR HOME<br>AWAY FROM<br>HOME
-        </h1>
-        <p class="hero-subline">All-inclusive PGs & Rooms — built for comfort, priced for everyone.</p>
-        <div class="hero-ctas">
-          <a href="#pgs" class="pill-btn">Explore PGs</a>
-          <a href="#rooms" class="pill-btn pill-btn--outline">Explore Rooms</a>
-        </div>
-        <div class="trust-badges">
-          <span>AC Rooms</span>
-          <span class="badge-dot">·</span>
-          <span>4 Meals Daily</span>
-          <span class="badge-dot">·</span>
-          <span>Free WiFi</span>
-          <span class="badge-dot">·</span>
-          <span>100 Units Electricity</span>
-          <span class="badge-dot">·</span>
-          <span>Daily Cleaning</span>
-        </div>
-      </div>
-      <hr class="hairline">
-    </section>
+    <div class="nav-drawer" id="nav-drawer">
+      <a href="#pgs" class="drawer-link">PGs</a>
+      <a href="#rooms" class="drawer-link">Rooms</a>
+      <a href="#booking" class="drawer-link">Book Now</a>
+      <a href="#booking" class="pill-btn drawer-cta">Enquire</a>
+    </div>
+  </nav>
 
-    <!-- Service Anchor Tabs -->
-    <div id="service-tabs">
-      <div class="tabs-inner container">
-        <button class="tab-btn active" data-target="pgs">PGs</button>
-        <button class="tab-btn" data-target="rooms">Rooms</button>
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-inner container">
+      <h1 class="hero-headline">
+        YOUR HOME<br>AWAY FROM<br>HOME
+      </h1>
+      <p class="hero-subline">All-inclusive PGs & Rooms — built for comfort, priced for everyone.</p>
+      <div class="hero-ctas">
+        <a href="#pgs" class="pill-btn">Explore PGs</a>
+        <a href="#rooms" class="pill-btn pill-btn--outline">Explore Rooms</a>
+      </div>
+      <div class="trust-badges">
+        <span>AC Rooms</span>
+        <span class="badge-dot">·</span>
+        <span>4 Meals Daily</span>
+        <span class="badge-dot">·</span>
+        <span>Free WiFi</span>
+        <span class="badge-dot">·</span>
+        <span>100 Units Electricity</span>
+        <span class="badge-dot">·</span>
+        <span>Daily Cleaning</span>
+      </div>
+    </div>
+    <hr class="hairline">
+  </section>
+
+  <!-- Service Anchor Tabs -->
+  <div id="service-tabs">
+    <div class="tabs-inner container">
+      <button class="tab-btn active" data-target="pgs">PGs</button>
+      <button class="tab-btn" data-target="rooms">Rooms</button>
+    </div>
+  </div>
+
+  <!-- PGs Section -->
+  <section id="pgs">
+    <!-- Green header block -->
+    <div class="section-header pgs-header">
+      <div class="container">
+        <h2 class="section-title pgs-title">PUNARJOY PGs</h2>
+        <p class="section-sub pgs-sub">All-inclusive · AC Rooms · 4 Meals Daily · Free WiFi</p>
       </div>
     </div>
 
-    <!-- PGs Section -->
-    <section id="pgs"></section>
+    <!-- Cards grid -->
+    <div class="cards-grid pgs-grid">
 
-    <!-- Rooms Section -->
-    <section id="rooms"></section>
+      <!-- Card 1: Double Sharing -->
+      <div class="plan-card" data-monthly="₹15,000" data-yearly="₹1,50,000">
+        <img class="plan-card__image" src="https://placehold.co/800x600/d9d9d9/1f1f1f?text=Double+Sharing"
+          alt="Double Sharing room at Punarjoy PG">
+        <div class="plan-card__body">
+          <h3 class="plan-card__title">Double Sharing</h3>
+          <div class="plan-card__tags">
+            <!-- no tags for standard plans -->
+          </div>
+          <div class="plan-card__toggle">
+            <button class="toggle-btn active" data-plan="monthly">Monthly</button>
+            <button class="toggle-btn" data-plan="yearly">Yearly</button>
+          </div>
+          <p class="plan-card__price">₹15,000</p>
+          <p class="plan-card__price-label">per month</p>
+          <div class="plan-card__chips">
+            <span class="pill-tag">AC Room</span>
+            <span class="pill-tag">4 Meals Daily</span>
+            <span class="pill-tag">Free WiFi</span>
+            <span class="pill-tag">Room Cleaning</span>
+            <span class="pill-tag">100 Units Electricity</span>
+          </div>
+          <p class="plan-card__note">★ Yearly plan includes Transportation</p>
+          <a href="#booking" class="pill-btn plan-card__cta">Enquire Now</a>
+        </div>
+      </div>
 
-    <!-- Features Section -->
-    <section id="features"></section>
+      <!-- Card 2: Single Sharing -->
+      <div class="plan-card" data-monthly="₹20,000" data-yearly="₹2,00,000">
+        <img class="plan-card__image" src="https://placehold.co/800x600/d9d9d9/1f1f1f?text=Single+Sharing"
+          alt="Single Sharing room at Punarjoy PG">
+        <div class="plan-card__body">
+          <h3 class="plan-card__title">Single Sharing</h3>
+          <div class="plan-card__tags">
+            <!-- no tags -->
+          </div>
+          <div class="plan-card__toggle">
+            <button class="toggle-btn active" data-plan="monthly">Monthly</button>
+            <button class="toggle-btn" data-plan="yearly">Yearly</button>
+          </div>
+          <p class="plan-card__price">₹20,000</p>
+          <p class="plan-card__price-label">per month</p>
+          <div class="plan-card__chips">
+            <span class="pill-tag">AC Room</span>
+            <span class="pill-tag">4 Meals Daily</span>
+            <span class="pill-tag">Free WiFi</span>
+            <span class="pill-tag">Room Cleaning</span>
+            <span class="pill-tag">100 Units Electricity</span>
+          </div>
+          <p class="plan-card__note">★ Yearly plan includes Transportation</p>
+          <a href="#booking" class="pill-btn plan-card__cta">Enquire Now</a>
+        </div>
+      </div>
 
-    <!-- Booking Section -->
-    <section id="booking"></section>
+      <!-- Card 3: Double Sharing Premium -->
+      <div class="plan-card" data-monthly="₹17,000" data-yearly="₹1,70,000">
+        <img class="plan-card__image" src="https://placehold.co/800x600/d9d9d9/1f1f1f?text=Double+Premium"
+          alt="Double Sharing Premium room at Punarjoy PG">
+        <div class="plan-card__body">
+          <h3 class="plan-card__title">Double Sharing Premium</h3>
+          <div class="plan-card__tags">
+            <span class="pill-tag pill-tag--filled">PREMIUM</span>
+            <span class="pill-tag">Balcony</span>
+          </div>
+          <div class="plan-card__toggle">
+            <button class="toggle-btn active" data-plan="monthly">Monthly</button>
+            <button class="toggle-btn" data-plan="yearly">Yearly</button>
+          </div>
+          <p class="plan-card__price">₹17,000</p>
+          <p class="plan-card__price-label">per month</p>
+          <div class="plan-card__chips">
+            <span class="pill-tag">AC Room</span>
+            <span class="pill-tag">4 Meals Daily</span>
+            <span class="pill-tag">Free WiFi</span>
+            <span class="pill-tag">Room Cleaning</span>
+            <span class="pill-tag">100 Units Electricity</span>
+          </div>
+          <p class="plan-card__note">★ Yearly plan includes Transportation</p>
+          <a href="#booking" class="pill-btn plan-card__cta">Enquire Now</a>
+        </div>
+      </div>
 
-    <!-- Footer -->
-    <footer id="footer"></footer>
+      <!-- Card 4: Single Sharing Premium -->
+      <div class="plan-card" data-monthly="₹22,000" data-yearly="₹2,20,000">
+        <img class="plan-card__image" src="https://placehold.co/800x600/d9d9d9/1f1f1f?text=Single+Premium"
+          alt="Single Sharing Premium room at Punarjoy PG">
+        <div class="plan-card__body">
+          <h3 class="plan-card__title">Single Sharing Premium</h3>
+          <div class="plan-card__tags">
+            <span class="pill-tag pill-tag--filled">PREMIUM</span>
+            <span class="pill-tag">Balcony</span>
+          </div>
+          <div class="plan-card__toggle">
+            <button class="toggle-btn active" data-plan="monthly">Monthly</button>
+            <button class="toggle-btn" data-plan="yearly">Yearly</button>
+          </div>
+          <p class="plan-card__price">₹22,000</p>
+          <p class="plan-card__price-label">per month</p>
+          <div class="plan-card__chips">
+            <span class="pill-tag">AC Room</span>
+            <span class="pill-tag">4 Meals Daily</span>
+            <span class="pill-tag">Free WiFi</span>
+            <span class="pill-tag">Room Cleaning</span>
+            <span class="pill-tag">100 Units Electricity</span>
+          </div>
+          <p class="plan-card__note">★ Yearly plan includes Transportation</p>
+          <a href="#booking" class="pill-btn plan-card__cta">Enquire Now</a>
+        </div>
+      </div>
 
-    <!-- Main JS entry point -->
-    <script type="module" src="js/main.js"></script>
-  </body>
+    </div>
+    <hr class="hairline">
+  </section>
+
+  <!-- Rooms Section -->
+  <section id="rooms">
+    <!-- Yellow header block -->
+    <div class="section-header rooms-header">
+      <div class="container">
+        <h2 class="section-title rooms-title">PUNARJOY ROOMS</h2>
+        <p class="section-sub rooms-sub">Private rooms — your space, your rules</p>
+      </div>
+    </div>
+
+    <!-- Cards grid -->
+    <div class="cards-grid rooms-grid">
+
+      <!-- Card 1: Normal Room -->
+      <div class="plan-card" data-monthly="₹11,000" data-yearly="₹1,00,000">
+        <img class="plan-card__image" src="https://placehold.co/800x600/d9d9d9/1f1f1f?text=Punarjoy+Rooms"
+          alt="Normal Room at Punarjoy">
+        <div class="plan-card__body">
+          <h3 class="plan-card__title">Normal Room</h3>
+          <div class="plan-card__tags">
+            <!-- no tags -->
+          </div>
+          <div class="plan-card__toggle">
+            <button class="toggle-btn active" data-plan="monthly">Monthly</button>
+            <button class="toggle-btn" data-plan="yearly">Yearly</button>
+          </div>
+          <p class="plan-card__price">₹11,000</p>
+          <p class="plan-card__price-label">per month</p>
+          <a href="#booking" class="pill-btn plan-card__cta">Enquire Now</a>
+        </div>
+      </div>
+
+      <!-- Card 2: Premium Room -->
+      <div class="plan-card" data-monthly="₹13,000" data-yearly="₹1,20,000">
+        <img class="plan-card__image" src="https://placehold.co/800x600/d9d9d9/1f1f1f?text=Punarjoy+Rooms"
+          alt="Premium Room with balcony at Punarjoy">
+        <div class="plan-card__body">
+          <h3 class="plan-card__title">Premium Room</h3>
+          <div class="plan-card__tags">
+            <span class="pill-tag pill-tag--filled">PREMIUM</span>
+            <span class="pill-tag">Balcony</span>
+          </div>
+          <div class="plan-card__toggle">
+            <button class="toggle-btn active" data-plan="monthly">Monthly</button>
+            <button class="toggle-btn" data-plan="yearly">Yearly</button>
+          </div>
+          <p class="plan-card__price">₹13,000</p>
+          <p class="plan-card__price-label">per month</p>
+          <a href="#booking" class="pill-btn plan-card__cta">Enquire Now</a>
+        </div>
+      </div>
+
+    </div>
+    <hr class="hairline">
+  </section>
+
+  <!-- Features Section -->
+  <section id="features">
+    <!-- Pink header block -->
+    <div class="section-header features-header">
+      <div class="container">
+        <h2 class="section-title features-title">EVERYTHING INCLUDED</h2>
+        <p class="section-sub features-sub">Every plan comes packed — no hidden charges, no surprises.</p>
+      </div>
+    </div>
+
+    <!-- Features grid -->
+    <div class="features-grid">
+
+      <div class="feature-item">
+        <p class="feature-name">AC Rooms</p>
+        <p class="feature-desc">Stay cool year-round with fully air-conditioned rooms.</p>
+      </div>
+
+      <div class="feature-item">
+        <p class="feature-name">4 Time Meals</p>
+        <p class="feature-desc">Breakfast, lunch, evening snacks and dinner — daily, included.</p>
+      </div>
+
+      <div class="feature-item">
+        <p class="feature-name">Free WiFi</p>
+        <p class="feature-desc">High-speed internet across all rooms and common areas.</p>
+      </div>
+
+      <div class="feature-item">
+        <p class="feature-name">Daily Cleaning</p>
+        <p class="feature-desc">Your room is cleaned and maintained every single day.</p>
+      </div>
+
+      <div class="feature-item">
+        <p class="feature-name">100 Units Electricity</p>
+        <p class="feature-desc">100 units of electricity included free every month.</p>
+      </div>
+
+      <div class="feature-item">
+        <p class="feature-name">Yearly Transportation</p>
+        <p class="feature-desc">Transportation facility included exclusively on yearly plans.</p>
+      </div>
+
+    </div>
+    <hr class="hairline">
+  </section>
+
+  <!-- Booking Section -->
+  <section id="booking">
+    <!-- Red header block -->
+    <div class="section-header booking-header">
+      <div class="container">
+        <h2 class="section-title booking-title">BOOK YOUR ROOM</h2>
+        <p class="section-sub booking-sub">Pay ₹6,000 security deposit to confirm. We verify within 24 hours.</p>
+      </div>
+    </div>
+
+    <!-- Booking layout -->
+    <div class="booking-body">
+      <div class="booking-layout container">
+
+        <!-- Left: QR + UPI -->
+        <div class="booking-qr">
+          <p class="qr-instruction">Scan & pay ₹6,000 security deposit</p>
+          <img class="qr-image" src="assets/qr.jpeg" alt="UPI QR Code for Punarjoy security deposit payment">
+          <p class="upi-id">UPI ID: <strong>krsnawrx@axl</strong></p>
+          <p class="qr-note">Take a screenshot of your payment confirmation before filling the form.</p>
+        </div>
+
+        <!-- Right: Booking form -->
+        <div class="booking-form-wrap">
+          <form id="booking-form" action="https://formspree.io/f/xaqgjkjy" method="POST" enctype="multipart/form-data">
+            <!-- Hidden plan input updated by JS -->
+            <input type="hidden" name="plan" id="plan-input" value="Monthly">
+
+            <div class="form-field">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Full Name" required>
+            </div>
+
+            <div class="form-field">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="Email Address" required>
+            </div>
+
+            <div class="form-field">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+            </div>
+
+            <div class="form-field">
+              <label for="room_type">Room Type</label>
+              <select id="room_type" name="room_type" required>
+                <option value="" disabled selected>Select a room type</option>
+                <option value="Double Sharing">Double Sharing — ₹15,000/mo</option>
+                <option value="Single Sharing">Single Sharing — ₹20,000/mo</option>
+                <option value="Double Sharing Premium">Double Sharing Premium — ₹17,000/mo</option>
+                <option value="Single Sharing Premium">Single Sharing Premium — ₹22,000/mo</option>
+                <option value="Normal Room">Normal Room — ₹11,000/mo</option>
+                <option value="Premium Room">Premium Room — ₹13,000/mo</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label>Plan</label>
+              <div class="plan-toggle">
+                <button type="button" class="plan-toggle-btn active" data-value="Monthly">Monthly</button>
+                <button type="button" class="plan-toggle-btn" data-value="Yearly">Yearly</button>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="payment_screenshot">Payment Screenshot</label>
+              <input type="file" id="payment_screenshot" name="payment_screenshot" accept="image/*" required>
+              <p class="field-note">Upload screenshot of your ₹6,000 UPI payment</p>
+            </div>
+
+            <button type="submit" class="pill-btn booking-submit">Confirm Booking</button>
+          </form>
+
+          <!-- Success message — hidden until form submitted -->
+          <div class="booking-success" id="booking-success" hidden>
+            <p class="success-title">Booking Received!</p>
+            <p class="success-body">We'll verify your payment and confirm your room within 24 hours. Check your email
+              for updates.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <hr class="hairline">
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <!-- Main footer content -->
+    <div class="footer-main container">
+
+      <!-- Left: Logo + brand name -->
+      <div class="footer-brand">
+        <img src="assets/logo_p.jpeg" alt="Punarjoy" class="footer-logo">
+        <span class="footer-brandname">PUNARJOY</span>
+      </div>
+
+      <!-- Center: Quick nav links -->
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#pgs" class="footer-link">PGs</a>
+        <a href="#rooms" class="footer-link">Rooms</a>
+        <a href="#features" class="footer-link">Why Us</a>
+        <a href="#booking" class="footer-link">Book Now</a>
+      </nav>
+
+      <!-- Right: Contact -->
+      <div class="footer-contact">
+        <a href="tel:+91 9079334713" class="footer-contact-item">
+          <span class="contact-label">Phone</span>
+          <span class="contact-value">+91 9079334713</span>
+        </a>
+        <a href="mailto:punarjoy@email.com" class="footer-contact-item">
+          <span class="contact-label">Email</span>
+          <span class="contact-value">punarjoy@email.com</span>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Hairline divider -->
+    <hr class="hairline">
+
+    <!-- Bottom copyright strip -->
+    <div class="footer-bottom container">
+      <p class="footer-copy">© 2025 Punarjoy. All rights reserved.</p>
+      <p class="footer-tagline">Built with care — your home away from home.</p>
+    </div>
+  </footer>
+
+  <!-- Main JS entry point -->
+  <script type="module" src="js/main.js"></script>
+</body>
+
 </html>

@@ -1,1 +1,206 @@
-/* css/booking.css — Booking section styles */
+.booking-header {
+  background: var(--color-the-red);
+  border-bottom: 1px solid var(--color-iron);
+}
+
+.booking-title {
+  color: var(--color-concrete);
+}
+
+.booking-sub {
+  color: var(--color-concrete);
+  opacity: 0.85;
+}
+
+.booking-body {
+  background: var(--color-the-red);
+  padding: var(--spacing-50) 0;
+  border-bottom: 1px solid var(--color-iron);
+}
+
+.booking-layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--spacing-50);
+  align-items: start;
+}
+
+/* Left — QR */
+.booking-qr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-14);
+  text-align: center;
+}
+
+.qr-instruction {
+  font-family: var(--font-primary);
+  font-size: var(--text-body-sm);
+  color: var(--color-concrete);
+  letter-spacing: var(--tracking-body);
+}
+
+.qr-image {
+  width: 200px;
+  height: 200px;
+  border: 1px solid var(--color-concrete);
+}
+
+.upi-id {
+  font-family: var(--font-primary);
+  font-size: var(--text-body);
+  color: var(--color-concrete);
+  letter-spacing: var(--tracking-body);
+}
+
+.qr-note {
+  font-family: var(--font-system);
+  font-size: var(--text-caption);
+  color: var(--color-concrete);
+  opacity: 0.75;
+  line-height: var(--leading-body);
+}
+
+/* Right — Form */
+.booking-form-wrap {
+  background: var(--color-concrete);
+  border: 1px solid var(--color-iron);
+  padding: var(--spacing-30);
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-20);
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-8);
+}
+
+.form-field label {
+  font-family: var(--font-primary);
+  font-size: var(--text-body);
+  color: var(--color-iron);
+  letter-spacing: var(--tracking-body);
+}
+
+.form-field input,
+.form-field select {
+  width: 100%;
+  padding: 12px var(--spacing-14);
+  border: 1px solid var(--color-iron);
+  border-radius: 0;
+  background: var(--color-concrete);
+  font-family: var(--font-primary);
+  font-size: var(--text-body);
+  color: var(--color-iron);
+  letter-spacing: var(--tracking-body);
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.form-field input:focus,
+.form-field select:focus {
+  outline: 2px solid var(--color-iron);
+  outline-offset: 2px;
+}
+
+.form-field input[type="file"] {
+  padding: var(--spacing-10);
+  cursor: pointer;
+}
+
+.field-note {
+  font-family: var(--font-system);
+  font-size: var(--text-caption);
+  color: var(--color-iron);
+  opacity: 0.6;
+}
+
+/* Plan toggle */
+.plan-toggle {
+  display: flex;
+  gap: var(--spacing-8);
+}
+
+.plan-toggle-btn {
+  font-family: var(--font-primary);
+  font-size: var(--text-body);
+  color: var(--color-iron);
+  letter-spacing: var(--tracking-body);
+  padding: 8px 20px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--color-iron);
+  background: transparent;
+  transition: background 0.2s, color 0.2s;
+}
+
+.plan-toggle-btn.active {
+  background: var(--color-iron);
+  color: var(--color-concrete);
+}
+
+.plan-toggle-btn:hover {
+  opacity: 0.85;
+}
+
+/* Submit button */
+.booking-submit {
+  align-self: flex-start;
+  margin-top: var(--spacing-10);
+}
+
+/* Success message */
+.booking-success {
+  text-align: center;
+  padding: var(--spacing-40);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-14);
+}
+
+.success-title {
+  font-family: var(--font-primary);
+  font-size: var(--text-heading);
+  line-height: var(--leading-heading);
+  letter-spacing: var(--tracking-heading);
+  color: var(--color-iron);
+}
+
+.success-body {
+  font-family: var(--font-system);
+  font-size: var(--text-body);
+  color: var(--color-iron);
+  opacity: 0.75;
+  line-height: var(--leading-body);
+}
+
+/* Tablet */
+@media (max-width: 1023px) {
+  .booking-layout {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-30);
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .booking-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-qr {
+    padding-bottom: var(--spacing-30);
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+  }
+
+  .booking-form-wrap {
+    padding: var(--spacing-20);
+  }
+}

@@ -1,1 +1,124 @@
-/* css/cards.css — Card component styles */
+/* Card wrapper */
+.plan-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  border: 1px solid var(--color-iron);
+}
+
+/* Room image */
+.plan-card__image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+/* Bottom content panel */
+.plan-card__body {
+  background: var(--color-concrete);
+  padding: var(--spacing-20);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-10);
+  flex: 1;
+}
+
+/* Room name */
+.plan-card__title {
+  font-family: var(--font-primary);
+  font-size: var(--text-subheading);
+  line-height: 1;
+  letter-spacing: var(--tracking-heading);
+  color: var(--color-iron);
+  font-weight: 400;
+}
+
+/* Premium / Balcony tags row */
+.plan-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-8);
+  min-height: 24px;
+}
+
+/* Price toggle buttons row */
+.plan-card__toggle {
+  display: flex;
+  gap: var(--spacing-8);
+  align-items: center;
+}
+
+.toggle-btn {
+  font-family: var(--font-primary);
+  font-size: var(--text-body);
+  color: var(--color-iron);
+  letter-spacing: var(--tracking-body);
+  padding: 6px 16px;
+  border-radius: var(--radius-pill);
+  background: transparent;
+  border: 1px solid transparent;
+  transition: background 0.2s, color 0.2s;
+}
+
+.toggle-btn:hover {
+  border-color: var(--color-iron);
+}
+
+.toggle-btn.active {
+  background: var(--color-iron);
+  color: var(--color-concrete);
+  border-color: var(--color-iron);
+}
+
+/* Price display */
+.plan-card__price {
+  font-family: var(--font-primary);
+  font-size: var(--text-heading);
+  line-height: var(--leading-heading);
+  letter-spacing: var(--tracking-heading);
+  color: var(--color-iron);
+  font-weight: 400;
+}
+
+.plan-card__price-label {
+  font-family: var(--font-primary);
+  font-size: var(--text-body);
+  color: var(--color-iron);
+  opacity: 0.6;
+  letter-spacing: var(--tracking-body);
+}
+
+/* Service chips row */
+.plan-card__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-8);
+}
+
+/* Transportation footnote */
+.plan-card__note {
+  font-family: var(--font-system);
+  font-size: var(--text-caption);
+  color: var(--color-iron);
+  opacity: 0.6;
+  line-height: var(--leading-body);
+}
+
+/* CTA button */
+.plan-card__cta {
+  margin-top: var(--spacing-10);
+  align-self: flex-start;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .plan-card__price {
+    font-size: 40px;
+  }
+
+  .plan-card__title {
+    font-size: var(--text-body-sm);
+  }
+}

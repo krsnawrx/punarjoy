@@ -1,1 +1,40 @@
-/* css/rooms-section.css — Rooms listings section styles */
+.rooms-header {
+  background: var(--color-the-yellow);
+  border-bottom: 1px solid var(--color-iron);
+}
+
+.rooms-title {
+  color: var(--color-iron);
+}
+
+.rooms-sub {
+  color: var(--color-iron);
+  opacity: 0.75;
+}
+
+.rooms-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.rooms-grid .plan-card {
+  border-right: 1px solid var(--color-iron);
+  border-bottom: 1px solid var(--color-iron);
+  border-top: none;
+  border-left: none;
+}
+
+.rooms-grid .plan-card:nth-child(even) {
+  border-right: none;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .rooms-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rooms-grid .plan-card {
+    border-right: none;
+  }
+}

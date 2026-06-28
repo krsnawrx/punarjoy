@@ -1,1 +1,40 @@
-/* css/pg-section.css — PG listings section styles */
+.pgs-header {
+  background: var(--color-the-green);
+  border-bottom: 1px solid var(--color-iron);
+}
+
+.pgs-title {
+  color: var(--color-concrete);
+}
+
+.pgs-sub {
+  color: var(--color-concrete);
+  opacity: 0.85;
+}
+
+.pgs-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.pgs-grid .plan-card {
+  border-right: 1px solid var(--color-iron);
+  border-bottom: 1px solid var(--color-iron);
+  border-top: none;
+  border-left: none;
+}
+
+.pgs-grid .plan-card:nth-child(even) {
+  border-right: none;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .pgs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pgs-grid .plan-card {
+    border-right: none;
+  }
+}
