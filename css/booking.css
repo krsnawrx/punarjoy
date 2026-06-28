@@ -165,6 +165,10 @@ form {
   gap: var(--spacing-14);
 }
 
+.booking-success[hidden] {
+  display: none;
+}
+
 .success-title {
   font-family: var(--font-primary);
   font-size: var(--text-heading);

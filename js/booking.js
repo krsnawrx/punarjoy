@@ -44,32 +44,37 @@ export function initBooking() {
   });
 
   // Room type change
-  roomSelect.addEventListener('change', updatePriceDisplay);
+  if (roomSelect) roomSelect.addEventListener('change', updatePriceDisplay);
 
-  // Form submit via fetch to Formspree
+  // Form submit
   if (!form) return;
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
-    const submitBtn = form.querySelector('.booking-submit');
     submitBtn.textContent = 'Sending...';
     submitBtn.style.opacity = '0.6';
     submitBtn.disabled = true;
 
     try {
       const formData = new FormData(form);
+
+      // Formspree free plan: file uploads require multipart — use fetch with FormData
+      // Do NOT set Content-Type header manually; let the browser set multipart boundary
       const response = await fetch(form.action, {
         method: 'POST',
         body: formData,
         headers: { 'Accept': 'application/json' }
+        // NOTE: do NOT add Content-Type here — browser sets it with boundary automatically
       });
 
       if (response.ok) {
         form.hidden = true;
         success.hidden = false;
       } else {
-        submitBtn.textContent = 'Something went wrong. Try again.';
+        const data = await response.json().catch(() => ({}));
+        const msg = data.errors ? data.errors.map(e => e.message).join(', ') : 'Something went wrong.';
+        submitBtn.textContent = msg + ' Try again.';
         submitBtn.style.opacity = '1';
         submitBtn.disabled = false;
       }

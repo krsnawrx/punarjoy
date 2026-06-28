@@ -34,7 +34,7 @@
   <nav id="navbar">
     <div class="nav-inner">
       <a href="#hero" class="nav-logo-link">
-        <img src="assets/logo_p.jpeg" alt="Punarjoy" class="nav-logo">
+        <img src="assets/logo_p.png" alt="Punarjoy" class="nav-logo">
       </a>
 
       <div class="nav-links">
@@ -347,7 +347,7 @@
 
         <!-- Right: Booking form -->
         <div class="booking-form-wrap">
-          <form id="booking-form" action="https://formspree.io/f/xaqgjkjy" method="POST" enctype="multipart/form-data">
+          <form id="booking-form" action="https://formspree.io/f/xaqgjkjy" method="POST">
             <!-- Hidden plan input updated by JS -->
             <input type="hidden" name="plan" id="plan-input" value="Monthly">
 
@@ -392,9 +392,15 @@
             </div>
 
             <div class="form-field">
-              <label for="payment_screenshot">Payment Screenshot</label>
-              <input type="file" id="payment_screenshot" name="payment_screenshot" accept="image/*" required>
-              <p class="field-note">Upload screenshot of your ₹6,000 UPI payment</p>
+              <label for="txn_id">UPI Transaction ID</label>
+              <input
+                type="text"
+                id="txn_id"
+                name="txn_id"
+                placeholder="e.g. 123456789012"
+                required
+              >
+              <p class="field-note">Enter the 12-digit transaction reference from your ₹6,000 UPI payment</p>
             </div>
 
             <button type="submit" class="pill-btn booking-submit">Confirm Booking</button>
