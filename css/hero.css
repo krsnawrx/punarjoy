@@ -1,1 +1,82 @@
-/* css/hero.css — Hero section styles */
+#hero {
+  min-height: 100vh;
+  background: var(--color-concrete);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-inner {
+  padding-top: var(--spacing-100);
+  padding-bottom: var(--spacing-50);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-30);
+}
+
+.hero-headline {
+  font-family: var(--font-primary);
+  font-size: var(--text-display);
+  line-height: var(--leading-display);
+  letter-spacing: var(--tracking-display);
+  color: var(--color-iron);
+  font-weight: 400;
+}
+
+.hero-subline {
+  font-family: var(--font-primary);
+  font-size: var(--text-subheading);
+  line-height: var(--leading-subheading);
+  letter-spacing: var(--tracking-heading);
+  color: var(--color-iron);
+  max-width: 600px;
+}
+
+.hero-ctas {
+  display: flex;
+  gap: var(--spacing-14);
+  flex-wrap: wrap;
+}
+
+.pill-btn--outline {
+  background: transparent;
+  color: var(--color-iron);
+  border: 1px solid var(--color-iron);
+}
+.pill-btn--outline:hover {
+  background: var(--color-iron);
+  color: var(--color-concrete);
+  opacity: 1;
+}
+
+.trust-badges {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--spacing-8);
+  font-family: var(--font-primary);
+  font-size: var(--text-body);
+  color: var(--color-iron);
+  letter-spacing: var(--tracking-body);
+}
+
+.badge-dot {
+  opacity: 0.4;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .hero-headline {
+    font-size: 48px;
+    line-height: 0.85;
+  }
+
+  .hero-subline {
+    font-size: var(--text-body-sm);
+  }
+
+  .hero-inner {
+    padding-top: 80px;
+    gap: var(--spacing-20);
+  }
+}

@@ -1,1 +1,44 @@
-/* css/tabs.css — Tabs component styles */
+#service-tabs {
+  position: sticky;
+  top: 64px;
+  z-index: 99;
+  background: var(--color-concrete);
+  border-bottom: 1px solid var(--color-iron);
+}
+
+.tabs-inner {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-10);
+  padding-top: var(--spacing-10);
+  padding-bottom: var(--spacing-10);
+}
+
+.tab-btn {
+  font-family: var(--font-primary);
+  font-size: var(--text-body-sm);
+  color: var(--color-iron);
+  letter-spacing: var(--tracking-body);
+  padding: 8px 20px;
+  border-radius: var(--radius-pill);
+  background: transparent;
+  border: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.tab-btn:hover {
+  background: rgba(31, 31, 31, 0.08);
+}
+
+.tab-btn.active {
+  background: var(--color-iron);
+  color: var(--color-concrete);
+}
+
+/* Mobile — same, just smaller padding */
+@media (max-width: 767px) {
+  .tab-btn {
+    font-size: var(--text-body);
+    padding: 6px 16px;
+  }
+}
