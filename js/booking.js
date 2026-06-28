@@ -52,6 +52,8 @@ export function initBooking() {
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
+    const submitBtn = form.querySelector('.booking-submit');
+
     submitBtn.textContent = 'Sending...';
     submitBtn.style.opacity = '0.6';
     submitBtn.disabled = true;
