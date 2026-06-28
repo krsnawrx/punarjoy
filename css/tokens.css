@@ -1,2 +1,56 @@
-/* css/tokens.css — Design tokens (CSS custom properties) */
-/* Add your color palette, spacing scale, typography tokens, etc. here */
+:root {
+  /* Colors */
+  --color-the-green: #027b49;
+  --color-the-pink: #f19ec8;
+  --color-the-red: #fa4d43;
+  --color-the-yellow: #fbb833;
+  --color-concrete: #d9d9d9;
+  --color-iron: #1f1f1f;
+  --color-carbon: #000000;
+
+  /* Typography */
+  --font-primary: 'Barlow Condensed', ui-sans-serif, system-ui, sans-serif;
+  --font-system: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+
+  /* Type scale */
+  --text-caption: 12px;
+  --text-body: 15px;
+  --text-body-sm: 18px;
+  --text-subheading: 26px;
+  --text-heading: 60px;
+  --text-display: 80px;
+
+  /* Line heights */
+  --leading-display: 0.75;
+  --leading-heading: 0.8;
+  --leading-subheading: 1;
+  --leading-body: 1.2;
+
+  /* Letter spacing */
+  --tracking-display: -0.06em;
+  --tracking-heading: -0.03em;
+  --tracking-body: -0.01em;
+
+  /* Spacing */
+  --spacing-5: 5px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-14: 14px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-30: 30px;
+  --spacing-40: 40px;
+  --spacing-50: 50px;
+  --spacing-100: 100px;
+
+  /* Border radius */
+  --radius-pill: 100px;
+  --radius-card: 0px;
+  --radius-circle: 50%;
+
+  /* Layout */
+  --page-max-width: 1440px;
+  --section-gap: 40px;
+}
